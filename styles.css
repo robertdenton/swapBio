@@ -1,0 +1,155 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	margin:0;
+}
+
+img {
+	width:100%;
+	position:relative;
+}
+
+audio{
+	display:block;
+	width:95% !important;
+	position:relative;
+	float:left;	
+}
+
+#parent_div {
+	width:100%;
+	max-width: 700px; /* *** */
+	height:100%;
+	margin:auto;
+	overflow:hidden;
+	border:2px;
+	border-style:solid;
+	background: black;
+}
+
+#main_div1, #main_div2, #main_div3, #main_div4, #main_div5 {
+	width:100%;
+	position:relative;
+	height:auto;
+	float:left;
+	display:none;
+}
+
+#main_display {
+	width:100%;
+	position:relative;
+	height:80%;
+	float:left;
+	display:block;
+	background:black;
+}
+
+#spec_display {
+	width: 100%;
+	position: relative;
+	height: 20%;
+	float: right;
+	display: block;
+	background: black;
+	margin-left: 10px;
+}
+
+#headline {
+	font-family:Merriweather;
+	color:white;
+	padding-top:15px;
+	padding-left:15px;
+	position:relative;
+	font-size:2.5em;
+	clear:both;
+	width:100%;
+	text-decoration:underline;
+}
+
+#biography {
+	float:left;
+	margin-left:15px;
+	width:90%;
+	font-family:News Cycle;
+	font-size:.8em;
+	padding-bottom:-20px;
+	color:white;
+	z-index:2;
+	position:relative;
+	word-break:break all;
+}
+
+#image {
+	width:95%;
+	height:auto;
+	padding-left:15px;
+	margin-right:15px;
+	margin-top:10px;
+	background:black;
+	float:left;
+	z-index:1;
+
+}
+
+#bio_name1, #bio_name2, #bio_name3, #bio_name4, #bio_name5 {
+	z-index:99999;
+	position:absolute;
+	font-family:Merriweather;
+	font-size:.8em;
+	background:black;
+	opacity:.66;
+	color:white;
+	margin-top:55%;
+	padding-left:3px;
+	padding-top:10px;
+	padding-bottom:0px;;
+	width:100%;
+	display:block;
+}
+
+#spec_div1, #spec_div2, #spec_div3, #spec_div4, #spec_div5 {
+	width:30%;
+	height:35%;
+	position:relative;
+	float:left;
+	background:black;
+	z-index:99998;
+	margin-left:15px;
+	margin-bottom:15px;
+}
+
+#spec_div1:hover, #spec_div2:hover, #spec_div3:hover, #spec_div4:hover, #spec_div5:hover{
+	opacity:.6;
+}
+
+#info {
+	display:none;
+}
+
+@media screen and (max-width: 520px) {
+	#spec_div1, #spec_div2, #spec_div3, #spec_div4, #spec_div5 {
+	width:27%;
+	height:35%;
+	position:relative;
+	float:left;
+	background:black;
+	z-index:99998;
+	margin-left:15px;
+	margin-bottom:15px;
+	}
+	#bio_name1, #bio_name2, #bio_name3, #bio_name4, #bio_name5 {
+	z-index:99999;
+	position:absolute;
+	font-family:Merriweather;
+	font-size:.5em;
+	background:black;
+	opacity:.66;
+	color:white;
+	margin-top:55%;
+	padding-left:1px;
+	padding-bottom:0px;;
+	width:100%;
+	display:block;
+}
+}

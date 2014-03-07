@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" type="text/css" href="styles.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=9" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+<link href='http://fonts.googleapis.com/css?family=Merriweather:400,900' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=News+Cycle' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="swapping_divs.js"></script>
+<script type="text/javascript" src="finish_swap.js"></script>
+<script type="text/javascript" src="displayBio.js"></script>
+<title>DC interns</title>
+</head>
+<!-- The onLoad function returns the innerHTML of the main container as a variable. It is used to detwermine what the spec containers will load onMouseClick. -->
+<body>
+<!-- This is the main div container. It holds everything.-->
+  <div id="parent_div">
+    <!-- This is the main display area for the graphic — it is where the corresponding HTML will be loaded when the spec_divs are clicked. By default, they are hidden. The innerHTML of each of these containers is transferred to the main display container. -->
+    <div id="main_display">
+      <div id="headline">
+        Isaiah Rifkin
+      </div>
+      <div id="biography">
+        <b>age:</b> 21 | <b>school:</b> CU | <b>year:</b> Senior | <b>major:</b> International affairs | <b>internship:</b> Center for Democracy in the Americas
+      </div>
+      <div id="image">
+        <img src="images/IsaiahSmall.jpg">
+      </div>
+      <div id="audio">
+        <audio controls style="width:75%">
+          <source src="audio/isaiah.mpg" type="audio/mpeg">
+          <source src="audio/isaiah.ogg" type="audio/ogg">
+          Your browser does not support this audio format.
+        </audio>
+      </div>
+    </div>
+    <!-- These are the main divs — they hold the major content of the graphic, such as audio and images. -->
+    <div id="main_div1">
+      <div id="headline">
+        Isaiah Rifkin
+      </div>
+      <div id="biography">
+        <b>age:</b> 21 | <b>school:</b> CU | <b>year:</b> Senior | <b>major:</b> International affairs | <b>internship:</b> Center for Democracy in the Americas
+      </div>
+      <div id="image">
+        <img src="images/IsaiahSmall.jpg">
+      </div>
+      <div id="audio">
+        <audio controls style=" width:406px;">
+          <source src="audio/isaiah.mpg" type="audio/mpeg">
+          <source src="audio/isaiah.ogg" type="audio/ogg">
+          Your browser does not support this audio format.
+        </audio>
+      </div>
+    </div>
+
+    <div id="main_div2">
+      <div id="headline">
+        Annika Erickson-Pearson
+      </div>
+      <div id="biography">
+        <b>age:</b> 20 | <b>school:</b> CU | <b>year:</b> Junior | <b>major:</b> International affairs | <b>internship:</b> Sen. Michael Bennet, D-Colo.
+      </div>
+      <div id="image">
+        <img src="images/AnnikaSmall.jpg">
+      </div>
+      <div id="audio"> 
+        <audio controls style=" width:406px;">
+          <source src="audio/annika.mpg" type="audio/mpeg">
+          <source src="audio/annika.ogg" type="audio/ogg">
+          Your browser does not support this audio format.
+        </audio>
+      </div>
+    </div>
+
+    <div id="main_div3">
+      <div id="headline">
+        Ben Bellman
+      </div>
+      <div id="biography">
+        <b>age:</b> 20 | <b>school:</b> CU | <b>year:</b> Senior | <b>major:</b> Geography and English | <b>internship:</b> National Agricultural Statistics Service
+      </div>
+      <div id="image">
+        <img src="images/BenSmall.jpg">
+      </div>
+      <div id="audio">
+        <audio controls style=" width:406px;">
+          <source src="audio/ben.mpg" type="audio/mpeg">
+          <source src="audio/ben.ogg" type="audio/ogg">
+          Your browser does not support this audio format.
+        </audio>
+      </div>
+    </div>
+    <!-- end upper display area -->
+    <!-- begin lower selection area -->
+    <div id="spec_display">
+      <!-- These are the spec div containers — they hold the previews for other elements in the graphic.-->
+      <div id="spec_div1" onclick="finish_swap();" onMouseOver="swap_spec_div1();display_bio()" onMouseOut="hide_bio()">
+        <div id="bio_name1" onMouseOut="hide_bio()">
+          Isaish Rifkin
+        </div>
+        <img src="images/IsaiahSmall.jpg">
+      </div>
+      <div id="spec_div2" onclick="finish_swap();" onMouseOver="swap_spec_div2();display_bio()" onMouseOut="hide_bio()">
+        <div id="bio_name2" onMouseOut="hide_bio()">
+          Annika Erickson-Pearson
+        </div>
+        <img src="images/AnnikaSmall.jpg">
+      </div>
+      <div id="spec_div3" onclick="finish_swap();" onMouseOver="swap_spec_div3();display_bio()" onMouseOut="hide_bio()">
+      <div id="bio_name3" onMouseOut="hide_bio()">
+        Ben Bellman
+      </div>
+      <img src="images/BenSmall.jpg">
+      </div>
+    </div>
+    <div id="info"></div><!--ALLOWS SWAP, DON'T DELETE-->
+  </div><!--end parent div-->
+</body>
+</html>
